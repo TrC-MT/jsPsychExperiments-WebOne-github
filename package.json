@@ -1,6 +1,10 @@
 {
     "scripts": {
-        "beginStart": "cd backend && node server.js",
-        "beginBuild": "cd backend && npm i"
-    }
+        "start": "node server.js",
+        "build": "npm i"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "jsonfile": "^6.1.0"
+      }
 }

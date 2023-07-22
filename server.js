@@ -1,18 +1,16 @@
 const express = require('express');
 const app = express();
-const port = 3285;
+const port = process.env.PORT || 3285;
 const fs = require('fs');
 const jsonfile = require('jsonfile');
-// const { userInfo } = require('os');
 
 app.use(express.urlencoded({urlencoded:false}));
 app.use(express.json());
 let dir = `${__dirname}`;
-dir = dir.slice(0, 64);
-let file_path = `${dir}/frontend`
+let file_path = `${dir}/frontend`;
 app.use('/frontend', express.static(file_path));
 
-const file_path_users = `${__dirname}/Users.json`;
+const file_path_users = `${dir}/Users.json`;
 
 let user_authenticated = false;
 
@@ -21,10 +19,9 @@ app.get('/', (req, res) => {
         console.log('User authenticated.')
     }
     else{
-        console.log('User not authenticated.')
+        console.log('User not authenticated.');
         let dir = `${__dirname}`;
-        dir = dir.slice(0, 64);
-        let file_path = `${dir}/frontend/pages/index.html`
+        let file_path = `${dir}/frontend/pages/index.html`;
         res.sendFile(file_path);
     }
 });
@@ -77,8 +74,7 @@ app.post('/login', (req, res) => {
 
     if(user_authenticated === true){
         let dir = `${__dirname}`;
-        dir = dir.slice(0, 64);
-        let file_path = `${dir}/frontend/pages/experimentList.html`
+        let file_path = `${dir}/frontend/pages/experimentList.html`;
         res.sendFile(file_path);
     }
     else{
@@ -95,12 +91,13 @@ app.post('/experiment', (req, res) =>{
         try {
 
             let dir = `${__dirname}`;
-            dir = dir.slice(0, 64);
             let file_path = `${dir}/frontend/pages/experiments/${experiment_name}/experiment/index.html`;
 
             let data = fs.readFileSync(file_path, 'utf8');
             // console.log('Old index: ')
             // console.log(data)
+
+            // ONLY WORKS WITH STROOPONE
             var idx_start = data.slice(0, 56);
             var idx_title = data.slice(56, (56 + experiment_name.length))
             var idx_second = data.slice((56 + experiment_name.length), (56 + experiment_name.length + 128))
@@ -111,8 +108,8 @@ app.post('/experiment', (req, res) =>{
             let idx_newStyleLink = `<link href="/frontend/pages/experiments/${experiment_name}/experiment/css/main.css" rel="stylesheet">`
             var new_index = idx_start + idx_title + idx_second + idx_newScript + idx_newStyleLink + idx_end;
 
-            console.log('New index: ');
-            console.log(new_index)
+            // console.log('New index: ');
+            // console.log(new_index)
             fs.writeFileSync(file_path, new_index, (err) => {
                 if(err) {
                     console.log('Error: Index was not rewritten.');
@@ -127,7 +124,6 @@ app.post('/experiment', (req, res) =>{
         }
         catch (err) {
             let dir = `${__dirname}`;
-            dir = dir.slice(0, 64);
             let file_path = `${dir}/frontend/pages/experimentList.html`;
             res.sendFile(file_path);
             console.log('Error: Not an experiment name.')
@@ -142,7 +138,7 @@ app.post('/experiment-data-send', (req, res) => {
     if(user_authenticated === true){
         let experimentName = req.body.experimentName
         let file_path = `${__dirname}/data/${experimentName}Data.csv`;
-        let data = req.body.nameExperimentData; //CURRENTLY IS NOTHING
+        let data = req.body.nameExperimentData;
         data = "\n" + data;
         fs.appendFile(file_path, data, (err) => {
             if(err) {
