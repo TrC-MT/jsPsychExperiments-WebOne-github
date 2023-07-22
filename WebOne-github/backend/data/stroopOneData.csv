@@ -1,0 +1,82 @@
+
+"rt","stimulus","response","trial_type","trial_index","time_elapsed","internal_node_id","success","task","correct_response","correct","trial"
+"635","<p>Welcome to StroopOne! Press any key to begin.<p/>"," ","html-keyboard-response","0","636","0.0-0.0","","","","",""
+"867","","","fullscreen","1","2504","0.0-1.0","true","","","",""
+"2697","<p>Choose the color of the word, NOT the word itself.</p> <p>Red = r</p> <p>Blue = b</p> <p>Green = g</p> <p>Click any key to start.</p>"," ","html-keyboard-response","2","5202","0.0-2.0","","","","",""
+"637","
+        <p style=""color: green"">red</p>
+      ","g","html-keyboard-response","3","5839","0.0-3.0-0.0","","response","g","true","incongruent"
+"576","
+        <p style=""color: blue"">blue</p>
+      ","b","html-keyboard-response","4","6416","0.0-3.0-0.1","","response","b","true","congruent"
+"530","
+        <p style=""color: red"">red</p>
+      ","r","html-keyboard-response","5","6946","0.0-3.0-0.2","","response","r","true","congruent"
+"784","
+        <p style=""color: green"">blue</p>
+      ","g","html-keyboard-response","6","7731","0.0-3.0-0.3","","response","g","true","incongruent"
+"574","
+        <p style=""color: blue"">green</p>
+      ","b","html-keyboard-response","7","8306","0.0-3.0-0.4","","response","b","true","incongruent"
+"506","
+        <p style=""color: blue"">red</p>
+      ","b","html-keyboard-response","8","8813","0.0-3.0-0.5","","response","b","true","incongruent"
+"602","
+        <p style=""color: red"">green</p>
+      ","r","html-keyboard-response","9","9415","0.0-3.0-0.6","","response","r","true","incongruent"
+"569","
+        <p style=""color: red"">blue</p>
+      ","r","html-keyboard-response","10","9984","0.0-3.0-0.7","","response","r","true","incongruent"
+"510","
+        <p style=""color: green"">green</p>
+      ","g","html-keyboard-response","11","10494","0.0-3.0-0.8","","response","g","true","congruent"
+"2168","
+        <p>You responded correctly on 100% of the trials.</p>
+        <p>Your average response time was 588ms.</p>
+        <p>You responded correctly on 100% of the congruent trials.</p>
+        <p>Your average response time on congruent trials was 539ms</p>
+        <p>You responded correctly on 100% of the incongruent trials.</p>
+        <p>Your average response time on incongruent trials was 612ms</p>
+        <p>Press any key to complete the experiment. Thank you!</p>
+      "," ","html-keyboard-response","12","12663","0.0-4.0","","","","",""
+
+"rt","stimulus","response","trial_type","trial_index","time_elapsed","internal_node_id","success","task","correct_response","correct","trial"
+"1698","<p>Welcome to StroopOne! Press any key to begin.<p/>"," ","html-keyboard-response","0","1698","0.0-0.0","","","","",""
+"991","","","fullscreen","1","3705","0.0-1.0","true","","","",""
+"1124","<p>Choose the color of the word, NOT the word itself.</p> <p>Red = r</p> <p>Blue = b</p> <p>Green = g</p> <p>Click any key to start.</p>"," ","html-keyboard-response","2","4829","0.0-2.0","","","","",""
+"922","
+        <p style=""color: green"">blue</p>
+      ","g","html-keyboard-response","3","5752","0.0-3.0-0.0","","response","g","true","incongruent"
+"553","
+        <p style=""color: green"">red</p>
+      ","g","html-keyboard-response","4","6305","0.0-3.0-0.1","","response","g","true","incongruent"
+"539","
+        <p style=""color: red"">red</p>
+      ","r","html-keyboard-response","5","6844","0.0-3.0-0.2","","response","r","true","congruent"
+"560","
+        <p style=""color: green"">green</p>
+      ","g","html-keyboard-response","6","7405","0.0-3.0-0.3","","response","g","true","congruent"
+"605","
+        <p style=""color: red"">green</p>
+      ","r","html-keyboard-response","7","8010","0.0-3.0-0.4","","response","r","true","incongruent"
+"474","
+        <p style=""color: blue"">blue</p>
+      ","b","html-keyboard-response","8","8485","0.0-3.0-0.5","","response","b","true","congruent"
+"524","
+        <p style=""color: blue"">red</p>
+      ","b","html-keyboard-response","9","9009","0.0-3.0-0.6","","response","b","true","incongruent"
+"967","
+        <p style=""color: red"">blue</p>
+      ","r","html-keyboard-response","10","9976","0.0-3.0-0.7","","response","r","true","incongruent"
+"1132","
+        <p style=""color: blue"">green</p>
+      ","b","html-keyboard-response","11","11109","0.0-3.0-0.8","","response","b","true","incongruent"
+"1582","
+        <p>You responded correctly on 100% of the trials.</p>
+        <p>Your average response time was 697ms.</p>
+        <p>You responded correctly on 100% of the congruent trials.</p>
+        <p>Your average response time on congruent trials was 524ms</p>
+        <p>You responded correctly on 100% of the incongruent trials.</p>
+        <p>Your average response time on incongruent trials was 784ms</p>
+        <p>Press any key to complete the experiment. Thank you!</p>
+      "," ","html-keyboard-response","12","12692","0.0-4.0","","","","",""

@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "beginStart": "cd backend && node server.js",
+        "beginBuild": "cd backend && npm i"
+    }
+}

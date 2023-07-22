@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
+    <link rel="stylesheet" href="./styles/index.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <form action="/login" method="post">
+            <span class="form-title">Returning user</span>
+            <span class="form-section">
+                <label>User Name</label>
+                <input type="text" name="username" id="user-name">
+            </span>
+            <span class="form-section">
+                <label>Password</label>
+                <input type="text" name="password" id="password">
+            </span>
+            <button type="submit">Login</button>
+        </form>
+        <form action="/new-user" method="post">
+            <span class="form-title">New user</span>
+            <span class="form-section">
+                <label>Email</label>
+                <input type="email" name="email" id="email">
+            </span>
+            <span class="form-section">
+                <label>User Name</label>
+                <input type="text" name="username" id="user-name">
+            </span>
+            <span class="form-section">
+                <label>Password</label>
+                <input type="text" name="password" id="password">
+            </span>
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
